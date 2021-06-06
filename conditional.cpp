@@ -45,7 +45,7 @@ OUTPUT:
 c is great
   
 //3.great of 3nums using multiple if
-//Multiple if-->more tym complexity coz it checks all if conditions even though if one if condition is true.so better to go with else if
+//Multiple if-->more tym complexity than 2nd prog coz it checks all if conditions even though if one if condition is true.so better to go with else if
 #include<iostream>
 #include<bits/stdc++.h>
 using namespace std;
@@ -69,4 +69,28 @@ int main()
   10 20 30
   c is great
     
- 
+ //4
+#include<iostream>
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+	int a,b,c;
+	cin>>a>>b>>c;
+	if(a>=b && a>=c)
+	{
+		cout<<"a is great"<<endl;
+	}
+    else if(b>=c && b>=a)
+	{
+		cout<<"b is great"<<endl;
+	}
+	if(c>=a && c>=b)
+	{
+		cout<<"c is great"<<endl;
+	}
+}
+OUTPUT:
+	10 30 20
+	b is great
+		
