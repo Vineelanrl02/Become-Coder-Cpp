@@ -23,25 +23,28 @@ int main()
 OUTPUT:
 palindrome 1221
 
-#include<iostream>
 #include<bits/stdc++.h>
-void main()
+using namespace std;
+int main()
 {
-    int n,a,r,rem=0;
-    cin>>n;
-    a=n;
-    while(n>0)
-    {
-        r=n%10;
-       n=n/10;
-	    rem=rem*10+r;
-    }
-    if(a==rem)
-    {
-        cout<<a<<" Palindrome Number";
-    }
-    else
-    {
-        cout<<a<<"not a Palindrome Number";
-    }
+	int n,rev=0,rem,p;
+
+	cout<<"enter the number";
+	cin>>n;
+	p=n;
+	while(n)
+	{
+		rem=n%10;
+		rev=(rev*10)+rem;
+		n=n/10;
+	}
+	if(p==rev)
+	    cout<<rev<<"palindrome";
+	else
+		cout<<rev<<"not palindrome";
+	return 0;
 }
+
+OUTPUT:
+enter the number1321
+1231not palindrome
