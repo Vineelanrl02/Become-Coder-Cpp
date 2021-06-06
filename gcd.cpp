@@ -4,6 +4,24 @@ using namespace std;
 int main()
 {
 	int gcd;
+	int a, b;
+  int r;
+  while (1)  
+  {
+    r = a%b;
+    a = b;
+    b = r;
+  }
+  return b;
+}
+
+
+#include<iostream>
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+	int gcd;
 	int num1,num2;
 	cout<<"enter the values of num1 & num2"<<endl;
 	cin>>num1>>num2;
