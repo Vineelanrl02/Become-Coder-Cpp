@@ -78,7 +78,7 @@ cout<<it.first<<" "<<it.second<<"\n" // first represents key second represents v
 OUTPUT:
 	10
 	1 2 1 3 1 4 1 5 6 7
-	1 4
+	1 4//1 appears 4 times
 	2 1
 	3 1
 	4 1
