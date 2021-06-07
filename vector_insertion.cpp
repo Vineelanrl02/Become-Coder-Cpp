@@ -36,3 +36,23 @@ int main() {
     return 0;
     }
     
+//insert value in vector
+#include<iostream>
+#include<vector>
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+	vector<int>ve={20,30,40};
+	ve.insert(ve.begin(),100);
+	//ve.insert(ve.begin()+2,100);//this adds the index value to 2
+	for(auto it:ve)
+	{
+		cout<<it<<" ";
+	}
+	return 0;
+}
+
+//ve.begin()+2,2,100)-->inserts 2 times
+//ve.begin()+1,100)-->inserts in 2nd positions
+//+2-->3rd pos
