@@ -20,7 +20,7 @@ OUTPUT:
 23 45 67 80 50
 --------------
 
-//it is an iterator which touches every element in the array
+
 //exists only in latest versions of cpp
 #include<bits/stdc++.h>
 using namespace std;
@@ -33,7 +33,7 @@ int main()
 	{
 		cin>>arr[i];
 	}
-	for(auto it:arr)
+	for(auto it:arr)////it is an iterator which touches every element in the array
 	{
 		cout<<it<<" ";
 	}
