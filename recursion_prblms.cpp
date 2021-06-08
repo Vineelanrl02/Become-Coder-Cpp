@@ -42,7 +42,40 @@ int main() {
 OUTPUT:
 4
 1 2 3 4
- 
+
+//converting above non-tail recursion to tail-recursion-->it can be done by using extra variable k
+#include <iostream>
+using namespace std;
+void PrintNtoone(int n)
+{
+	if(n==0)
+	{
+		return;
+	}
+	cout<<n<<" ";
+	PrintNtoone(n-1);
+}
+void printonetoN(int n,int k=1)
+	{
+		if(n==0)
+		{
+			return;
+		}
+		cout<<k<<" ";
+		printonetoN(n-1,k+1);
+	}
+	int main()
+	{
+		int n;
+		cin>>n;
+		//printNtoone(n);
+		printonetoN(n);
+		return 0;
+	}
+OUTPUT:
+4
+1 2 3 4
+
   
 //sum of digits upto given num n
 #include <iostream>
@@ -65,7 +98,7 @@ OUTPUT:
 4-->1+2+3+4=10
 10
  
-  
+    
 //sum of digits 
 #include <iostream>
 using namespace std;
